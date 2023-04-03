@@ -2,8 +2,94 @@
 <html>
     <head>
         <title> Requirements </title>
+        <style>
+         div {
+               width: 1000px;
+               word-wrap: break-word;
+            }
+         div.title {
+            width:fit-content;
+         }
+        </style>
     </head>
     <body>
-        <p> This is our Requirements page. </p>
+      <div class = title>
+        <h1> Requirements Specification for Frost Fyte</h1>
+        <hr>
+      </div>
+      <div>
+      <b>1.1 Introduction</b>
+
+      <p>&emsp;FrostFyte is a multiplayer platform fighting game, which draws inspiration from genre contemporaries like Super Smash Bros. and Rivals of Aether. The game involves players fighting on a stage, a platform surrounded on all sides by invisible areas called blast zones. The goal is to use your abilities to launch your opponents into said blast zones, with the distance they’re launched increasing as you continue to damage them.</p>
+
+      <b>1.2 Scope of Product</b>
+
+      <p>&emsp;The game includes two stages, a character, and a variety of moves to use to ensure victory over your opponents.</p>
+
+      <b>1.3 Acronyms, Abbreviations, Definitions</b>
+
+      <p>&emsp;There are no significant acronyms or abbreviation necessary to understand our documentation. However, some jargon from the platform fighter community may be seen. </p>
+
+      <b>1.4 References</b>
+
+      <p>&emsp;A variety of jargon can be found and defined in <a href="https://www.ign.com/wikis/super-smash-bros-wii-u-3ds/Terminology">this article</a>, which covers mostly every significant term that may be used in future documentation. </p>
+      <br>
+      
+      <b>2.1 Context of Product</b>
+      
+      <p>&emsp;FrostFyte will exist as a low-budget platform fighter within the larger community of platform fighters.</p>
+      
+      <p><b>2.2 Domain Model and Description</b></p>
+      <img src="FFdomainmodel.png" style="width:300;height:302px;">
+      <p>&emsp;This is a model of all the states the player can enter during a session of FrostFyte. The game starts with the players choosing a character, then a stage, then proceeding to combat. From there, a number of actions can occur that determine the victor and loser of each match. Once this result is displayed, the players can either play again, or quit the application.
+      </p>
+      
+      <b>2.3 Product Functions</b>
+      
+      <p>&emsp;FrostFyte functions as a form of entertainment for fans of the platform fighter genre. It is intended to provide a new experience to fans of competitive games, while maintaining the charm and soul of iconic platform fighters.  
+      </p>
+
+      <b>2.4 User Characteristics and Expectations</b>
+
+      <p>&emsp;FrostFyte users are expected to consist of platform fighter fans, which vary in skill and knowledge from fledgeling newcomers to experienced veterans. This means that FrostFyte must account for a variety of players, by creating a system that’s easy to understand, but difficult to master.
+      </p>
+      
+      <b>2.5 Constraints</b>
+      
+      <p>&emsp;FrostFyte users are expected to consist of platform fighter fans, which vary in skill and knowledge from fledgeling newcomers to experienced veterans. This means that FrostFyte must account for a variety of players, by creating a system that’s easy to understand, but difficult to master.
+      </p>
+      
+      <b>2.6 Assumptions and Dependencies</b>
+      
+      <p>&emsp;Our system does rely on the pre-existing Game Maker and Platform Fighter Engine, although no programs outside of the executable are properly required to run the software. As of right now, our demos are designed exclusively with Windows in mind.
+      </p>
+      <br>
+      
+      <b>3. User Stories</b>
+      
+      <p>&emsp;Our user stories can be found <a href="userstories.html">here</a>.
+      </p>
+      <br>
+      
+      <b>4.1 External Interface Requirements (User, Hardware, Software, Communications)</b>
+      
+      <p>&emsp;Our system has a variety of UI elements necessary for character select, stage select, and pause options.
+      </p>
+      
+      <b>4.2 Performance Requirements</b>
+      
+      <p>&emsp;FrostFyte is not an performance-intensive project. As a small-scale project with mostly relatively simple code & visual elements, FrostFyte should run reasonably well on any modern computer with Windows.
+      </p>
+
+      <b>4.3 Design Constraints</b>
+
+      <p>&emsp;Our primary constraint in the design of FrostFyte is simply the lack of time. As of today, we have approximately a month to complete development, which means we’ll need to work efficiently to complete our goals.</p>
+
+
+      <b>4.4 Quality Requirements</b>
+
+      <p>&emsp;As a small project in an inherently complex genre, FrostFyte is intended to serve more as a proof-of-concept than a final product. Because of that, and the fact that the game is intended purely for entertainment, it is not expected that the quality expectations of our users will be high.</p>
+
+      </div>
     </body>
 </html>
