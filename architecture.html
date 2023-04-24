@@ -1,9 +1,120 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Architecture </title>
+      <title> Architecture </title>
+      <style>
+       div {
+             word-wrap:break-word;
+             width:800px;
+          }
+
+       div.title {
+          width: 600px;
+       }
+
+       ul {
+         list-style-type: '-     ';
+       }
+
+       img.blackboard {
+         object-fit:contain;
+         height: 275px;
+       }
+
+       img.repository {
+         object-fit:contain;
+         height: 300px;
+       }
+
+       img.FFrepo {
+         object-fit: contain;
+         height: 500px;
+       }
+
+      </style>
     </head>
     <body>
-        <p> This is our Architecture page. </p>
+      <div class = title>
+         <h1> Architecture </h1>
+         <hr>
+      </div>
+      
+      <h2><b>Project Overview</b></h2>
+      <div>
+         <ul>
+            <li>FrostFyte is a platform fighter in which players are tasked with knocking opponents into the blast zone, using a variety of attacks to damage them and send them flying further.</li>
+            
+            <p></p>
+
+            <li>The game is a take on the traditional fighting game formula that incentivises a greater emphasis on movement and stage control.</li>
+            
+            <p></p>
+
+            <li>The game is built in GameMaker, using Platform Fighter Engine.</li>
+         </ul>
+      </div>
+
+      <br>
+
+      <h2><b>Key Architectural Drivers</b></h2>
+      <div>
+         <ul>
+            <li>FrostFyte features a large variety of assets,
+               abilities, and requirements.</li>
+            
+            <p></p>
+
+            <li>As such, we’ll need an architecture that can
+               support lots of data, in the form of sprites,
+               scripts, and other assets.</li>
+            
+            <p></p>
+            
+            <li>We’ll also need to have easy access to the
+               relevant data at any given time.</li>
+         </ul>
+      </div>
+
+      <br>
+      
+      <h2><b>Architectural Style Choices</b></h2>
+      <div>
+         <b>Two</b> options pique our interest with that goal in mind:
+      </div>
+      <br>
+      <div>
+         <a href="https://www.tutorialspoint.com/software_architecture_design/data_centered_architecture.htm">
+            <img class = "blackboard" src="Architecture/blackboard.png" alt="https://www.tutorialspoint.com/software_architecture_design/data_centered_architecture.htm">
+         </a>
+         <p><u><b>Blackboard:</b></u> A system-active architecture in which
+         computational processes are determined by data
+         status.</p>
+      </div>
+
+      <br>
+
+      <div>
+         <a href="https://www.tutorialspoint.com/software_architecture_design/data_centered_architecture.htm">
+            <img class = "repository" src="Architecture/repository.png" alt="https://www.tutorialspoint.com/software_architecture_design/data_centered_architecture.htm">
+         </a>
+         <p><u><b>Repository:</b></u> A client-active architecture with in which
+            computational processes are independent.</p>
+      </div>
+      
+      <br>
+      
+      <h2><b>Architectural Diagram</b></h2>
+      <img class = "FFrepo" src="Architecture/FFarchitecture.png">
+
+      <br>
+      
+      <h2><b>Conclusion</b></h2>
+      <div>
+         <p>We’ve chosen a Repository Architecture, as an
+            architecture accustomed to user input would be
+            optimal for a fighting game, and the independence of
+            computational process will be helpful for the
+            constantly shifting game states at play.</p>
+      </div>
     </body>
 </html>
