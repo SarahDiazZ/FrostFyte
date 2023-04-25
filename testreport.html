@@ -2,8 +2,47 @@
 <html>
     <head>
         <title> Test Report </title>
+        <style>
+         div {
+            word-wrap:break-word;
+            width:800px; 
+         }
+
+         div.title {
+            width: 600px;
+         }
+
+         ul {
+            list-style-type: '-     ';
+         }
+        </style>
     </head>
     <body>
-        <p> This is our Test Report page. </p>
+      <div class = title>
+         <h1> FrostFyte Test Report </h1>
+         <hr>
+      </div>
+      
+      <div>
+
+         <p>&emsp;When testing components, generally we’d run the current build of the game, then ensure all the aspects we’re testing in that moment are functioning properly. <br><br>For instance, when building stages, we’d run the game, access that stage, and try all the aspects that need testing: platforms, blast zones, spawn points, etc. If it wasn’t working, we’d look through the code to try to spot errors that could cause said issue. If it was, we’d carry on to the next thing.</p>
+
+         <p>When testing the system as a whole, we’d try to push the system to cause any bugs or errors we expected. From there, if we didn’t have any issues, we’d continue the tests on a larger scale to try to spot any other weak points in our systems. All in all, this proved to be relatively effective, as we ended up with a system that survived most stress testing. </p>
+
+         <p>We performed our user testing based on our own criteria. As fans of fighting games with a broad range of skill levels, we tried to balance and implement mechanics in a way that seemed fun to all of us.</p>
+
+         <h4>For our user stories, we had a few goals:</h4>
+
+         <ol>
+            <li>Enhance Competitive Gaming</li>
+            <p>We wanted to make something compelling for a competitive scene, and I think the work we’ve done so far has brought us closer to that goal.<p></p>Frostfyte’s stage design leans towards established traits for well-enjoyed platform fighter stages, and we’ve got a solid mix of unique and entertaining. As such, we consider this completely implemented.</p>
+            <br>
+            <li>Unique Character Design</li>
+            <p>We wanted to give multiple players multiple costumes, in order to make it easier to differentiate who’s who in multiplayer matches.<p></p> Working in PFE’s established architecture, we managed to include multiple color palettes for players and CPU to use, so that combat doesn’t become visually confusing. As such, we consider this completely implemented.</p>
+            <br>
+            <li>System Uniqueness</li>
+            <p>We wanted to create a combat system that was noticeably distinct from other platform fighters in terms of combat. <p></p>Unfortunately, given our very strict timeline, and the other work that distracted us from this goal, we wouldn’t consider this completely implemented. <p></p>As much as we wanted to flesh out the combat, we found that the basic features took far longer than we accounted for, and as such, we were unable to fully realize our vision for FrostFyte’s playstyle. </p>
+         </ol>
+      </div>
     </body>
 </html>
