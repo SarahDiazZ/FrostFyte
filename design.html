@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Design Document </title>
+      <title> Design Document </title>
+      
+      <style>
+         div {
+            word-wrap:break-word;
+            width:800px; 
+         }
+
+         div.title {
+            width: 600px;
+         }
+
+         img.FFrepo {
+            object-fit: contain;
+            height: 400px;
+            float: left;
+         }
+         
+         p.fulldesc {
+            width: 400px;
+            text-align: center;
+         }
+
+
+      </style>
+
     </head>
+
     <body>
-        <p> This is our Design Document page. </p>
+        <div class="title">
+            <h1>FrostFyte Design Document</h1>
+            <hr>
+        </div>
+        <div>
+         <br>
+         <img class = "FFrepo" src="Architecture/FFarchitecture.png">
+         <br><br>
+         FrostFyte works by tying all processes to a single stockpile of <b>scripts</b>.<br><br>
+         
+         These scripts are influenced by player input (<b>administrator</b>), and allow players to engage with what Game Maker Engine calls <b>rooms</b>, which refers to both stages and menus. <br><br>
+         
+         These menus impact <b>stage and character processes</b>, including character & stage selection. <br><br>
+         
+         Both stages and characters fall back into the script stockpile, which impacts things like <b>damage, knockback, knockouts, and general physics</b> when influenced by player inputs. <br><br>
+         
+         The scripts and character processes also draw on the <b>sprite</b> stockpile, which refers to all of FrostFyte’s original assets used during gameplay, including stage art, character art, and animations.
+
+         <p class="fulldesc"><i>The full Repository Architecture diagram for FrostFyte</i></p>
+
+         <p>&emsp;Classes in Platform Fighter Engine play a large role, in that they’re integral to the scripts that provide characters with their functions. Fighters function as classes, and within their declarations, they’re given a number of stats determining things like movement speed on the ground and in the air. <br>&emsp;In addition, these “classes” have access to a number of other scripts, assigning properties and animations to moves. These classes are not singleton, as they’re called in a variety of functions necessary for character selection.</p>
+        </div>
     </body>
 </html>
